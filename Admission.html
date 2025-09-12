@@ -123,6 +123,22 @@
       cursor: pointer;
       display: none;
     }
+
+    .home-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #ffc107;
+      color: #002147;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .home-btn:hover {
+      background: #e0a800;
+    }
   </style>
 </head>
 <body>
@@ -157,9 +173,9 @@
       <li>JAMB Result Slip</li>
     </ul>
 
-    <!-- Admission Form -->
+    <!-- Admission Form with Formspree -->
     <h2>Application Form</h2>
-    <form action="#" method="post">
+    <form action="https://formspree.io/f/xrbledqr" method="POST">
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
 
@@ -189,6 +205,9 @@
 
     <h2>Application Deadline</h2>
     <p>All applications must be submitted before <strong>October 15, 2025</strong>.</p>
+
+    <!-- Back to Home Page button -->
+    <a href="index.html" class="home-btn">← Back to Home Page</a>
   </div>
 
   <footer>
@@ -213,4 +232,4 @@
   </script>
 
 </body>
-  </html>
+</html>
